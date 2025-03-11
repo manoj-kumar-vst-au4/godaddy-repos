@@ -43,16 +43,15 @@ This will start a local server, typically at `http://localhost:5173/`.
 
 ### 4️⃣ Run Tests
 ```sh
-npm test
+npm run test
 ```
 
 ---
 
 ## 🎯 Design Decisions
 1. **API abstraction**: API requests are moved to `api.js` for modularity.
-2. **Error handling**: UI gracefully handles API failures.
-3. **React Router**: Enables client-side navigation between repo list and details.
-4. **Testing coverage**: API and UI components have unit tests.
+2. **React Router**: Enables client-side navigation between repo list and details.
+3. **Testing coverage**: API and UI components have unit tests.
 
 ---
 

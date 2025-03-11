@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useParams, Link, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 const RepoDetails = () => {
-  const { repoName } = useParams();
   const { state } = useLocation();
   const [repo, setRepo] = useState(state?.repo || {});
 

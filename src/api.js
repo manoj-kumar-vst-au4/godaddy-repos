@@ -10,12 +10,3 @@ export const fetchRepos = async () => {
     throw new Error("Failed to fetch repositories");
   }
 };
-
-export const fetchRepoDetails = async (repoName) => {
-  try {
-    const response = await axios.get(`https://api.github.com/repos/godaddy/${repoName}`);
-    return response.data;
-  } catch (error) {
-    throw new Error("Failed to fetch repository details");
-  }
-};
