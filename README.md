@@ -26,7 +26,7 @@ This project is a React-based web application that fetches and displays a list o
 
 ### 1️⃣ Clone the repository
 ```sh
-git clone https://github.com/your-username/godaddy-repos.git
+git clone https://github.com/manoj-kumar-vst-au4/godaddy-repos.git
 cd godaddy-repos
 ```
 

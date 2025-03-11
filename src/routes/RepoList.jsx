@@ -31,7 +31,7 @@ const RepoList = () => {
       <ul className="repo-list">
         {repos.map((repo) => (
           <li key={repo.id}>
-            <Link to={`/repo/${repo.name}`}>{repo.name}</Link>
+            <Link to={`/repo/${repo.name}`} state={{repo}} >{repo.name}</Link>
           </li>
         ))}
       </ul>
