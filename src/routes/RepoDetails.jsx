@@ -3,9 +3,12 @@ import { Link, useLocation } from "react-router-dom";
 const RepoDetails = () => {
   const { state } = useLocation();
   const [repo, setRepo] = useState(state?.repo || {});
-
+  const isEmpty=(obj)=>{
+    return Object.keys(obj).length === 0;
+  }
   return (
-    <div className="container">
+    <>
+    {!isEmpty(repo) && <div className="container">
       <h1>{repo.name}</h1>
       <p className="details">{repo.description || "No description available"}</p>
       <p className="details">
@@ -25,7 +28,11 @@ const RepoDetails = () => {
       </a>
       <br />
       <Link to="/" className="back-link">Back to List</Link>
-    </div>
+    </div>}
+    {isEmpty(repo) && <div className="container">
+      <Link to="/" className="back-link">Back to List</Link>
+      </div>}
+    </>
   );
 };
 
