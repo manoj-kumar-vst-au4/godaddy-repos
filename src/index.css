@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #0073e6;
+}
+
+.repo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.repo-list li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.repo-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.repo-list a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+}
+
+.repo-list a:hover {
+  text-decoration: underline;
+}
+
+.details {
+  padding: 10px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
